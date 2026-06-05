@@ -1,0 +1,7 @@
+{
+  "name": "WordGame",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

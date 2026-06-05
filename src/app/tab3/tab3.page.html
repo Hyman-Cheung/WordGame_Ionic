@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <b class="text" slot="end">你的分數：</b>
+    <ion-badge slot="end" color="light">{{userScore}}</ion-badge>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="ion-padding">
+
+
+<ion-grid>
+  <ion-row class="ion-marhin-horizontal">
+    <ion-col *ngFor="let question of questions" >
+      <ion-card (click)="start(question.id)">
+        <div align="center">
+          <ion-thumbnail>
+            <img [src]="question?.src" />
+          </ion-thumbnail>
+          <ion-icon color="dark" *ngIf="question.q" name="checkmark-done-outline"></ion-icon>
+        </div> 
+
+      </ion-card>    
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>

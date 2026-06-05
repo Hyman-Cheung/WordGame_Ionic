@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <b class="text" slot="end">你的分數：</b>
+    <ion-badge slot="end" color="light">{{userScore}}</ion-badge>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+<ion-list>
+  
+
+  <ion-slides  [options]="slideOpts">
+    <ion-slide>
+    <ion-card (click)="startGame()">
+      <img src="/assets/abc/W.png" alt="">
+    </ion-card>
+    </ion-slide>
+    
+    <ion-slide> 
+    <ion-card (click)="startGame()">
+      <img src="/assets/abc/O.png" alt="">
+    </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+    <ion-card (click)="startGame()">
+      <img src="/assets/abc/R.png" alt="">
+    </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card (click)="startGame()">
+        <img src="/assets/abc/D.png" alt="">
+      </ion-card>
+      </ion-slide>
+    
+    </ion-slides>
+
+  <br>
+  
+<div class="ion-text-center"> 
+  <ion-button color="light" (click)="startGame()"  fill="outline" shape="round">
+    <b>  開始遊戲</b>
+    </ion-button>
+</div>
+
+</ion-list>
+ </ion-content>
+

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="dark">
+  </ion-toolbar>
+</ion-header>
+<ion-content class = "ion-padding">
+<br>
+  <ion-card>
+  <br>
+    <div class="ion-text-center"> 
+      <ion-card-title><b>更改個人資料</b></ion-card-title> 
+    </div>
+    <form>
+      <ion-list>
+  
+        <ion-item>
+          <ion-label position="stacked">
+            <b>
+              <ion-icon name="person-outline" ></ion-icon>
+               姓名:
+            </b>
+          </ion-label>
+          <ion-input required type="text" [(ngModel)]="name" name="name"></ion-input>   <!--required是錯誤顯示紅色-->
+        </ion-item>
+  
+        <ion-item>
+          <ion-label  position="stacked">
+            <b>
+              <ion-icon name="mail-outline"></ion-icon>
+              電郵地址:
+            </b>
+          </ion-label>
+          <ion-input required type="email" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label  position="stacked">
+            <b>
+              <ion-icon name="call-outline"></ion-icon>
+              電話:
+            </b>
+          </ion-label>
+          <ion-input required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
+        </ion-item>
+         
+        <br>
+  
+        <ion-button color="dark" [disabled]="match" required type="submit" (click)="undateAlertConfirm()" expand="block" fill="outline" shape="round">
+          更改
+        </ion-button>
+  
+      </ion-list>
+    </form>
+  </ion-card>
+
+</ion-content>

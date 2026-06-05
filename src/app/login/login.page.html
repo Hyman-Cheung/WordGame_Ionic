@@ -1,0 +1,47 @@
+
+
+<!--登錄界面-->
+<ion-content class="ion-padding">
+
+
+
+    <ion-list class="ion-text-center">
+       <ion-list-header><ion-label color="light">Word Game</ion-label></ion-list-header>
+
+       <ion-card>
+
+          <ion-item>
+            <ion-label position="stacked">
+              <ion-icon class="ion-margin-end" name="mail-outline"></ion-icon>
+              <b>電郵地址:</b>
+            </ion-label>
+            <ion-input required type="email" [(ngModel)]="email" name="email"></ion-input>
+          </ion-item>
+
+           <br>
+
+          <ion-item>
+            <ion-label position="stacked">
+              <ion-icon class="ion-margin-end" name="lock-closed-outline"></ion-icon>
+              <b>密碼:</b>
+            </ion-label>
+            <ion-input required type="password" [(ngModel)]="password" name="password"></ion-input>
+          </ion-item>
+
+     
+      </ion-card>
+    
+      <br>    
+
+        <ion-button (click)="login()" routerLinkActive="router-link-active"  color="light" expand="block" shape="round">
+          <ion-icon class="ion-margin-end" name="log-in-outline"></ion-icon>
+          登入
+        </ion-button>
+
+        <br>
+
+        <ion-button  [routerLink]="['/register']" routerLinkActive="router-link-active" color="light" expand="block" shape="round">註冊</ion-button>
+        <ion-text [routerLink]="['/forgot-password']" routerLinkActive="router-link-active" color="light"><p>忘記密碼?</p></ion-text>
+    </ion-list>
+
+</ion-content>

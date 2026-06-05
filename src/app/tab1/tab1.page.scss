@@ -1,0 +1,21 @@
+ion-content{
+    --background:var(--ion-color-dark) url('../../assets/gameBackground5.jpg') no-repeat center center/cover;
+  }
+
+ion-card
+{ 
+--background:var(--ion-color-dark) url('../../assets/gameBackground4.jpg') no-repeat center center/cover;
+    font-weight: bold;
+       font-size: 3%;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}  
+
+h6
+{
+font-size: 45%;
+}
+
+h1
+{
+  font-size: 80%; 
+}

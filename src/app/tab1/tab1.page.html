@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <b class="text" slot="end">你的分數：</b>
+    <ion-badge slot="end" color="light">{{user?.userScore}}</ion-badge>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+      
+      <ion-card style="text-align: center;">
+     <ion-card-title>
+      <h1>
+        <b>
+          <ion-icon name="person-outline" ></ion-icon>
+          {{user?.userName}}
+        </b>
+       </h1>
+     </ion-card-title>
+       
+     <ion-card-title>
+      <h6>
+        <b>
+          <ion-icon name="bookmark-outline"></ion-icon>
+          你的分數：{{user?.userScore}}分
+        </b>
+       </h6> 
+     </ion-card-title>
+       </ion-card>
+
+       
+      <ion-card style="text-align: center;"> 
+        <ion-card-title>
+          <h6>
+           <b>
+            <ion-icon name="mail-outline"></ion-icon>
+            電郵地址：
+           </b>
+           </h6>
+
+           <h6>
+             <b>
+              {{user?.userEmail}}
+             </b>
+           </h6>
+        </ion-card-title>
+        </ion-card>
+
+      <ion-card style="text-align: center;">
+       <ion-card-title>
+        <h6>
+         <b>
+          <ion-icon name="call-outline"></ion-icon>
+          電話：{{user?.userPhone}}
+         </b>
+        </h6>
+       </ion-card-title>
+      </ion-card>
+
+    <ion-card style="text-align: center;">
+    <ion-card-title>
+      <h6>
+        <b>
+          <ion-icon  name="calendar-outline"></ion-icon>
+          註冊日期：
+        </b>
+       </h6>
+  
+       <h6>
+       <b>
+        {{user?.createdAt | date}}
+       </b>
+       </h6>
+    </ion-card-title>
+    </ion-card>
+
+      <ion-card style="text-align: center;" *ngIf="user?.editAt"> <!--如果有更新日期就顯示-->
+      <ion-card-title>
+        <h6>
+          <b>
+            <ion-icon name="calendar-clear-outline"></ion-icon>
+            更新日期：
+          </b>
+        </h6>
+        <h6>
+          <b>
+            {{user?.editAt | date}}
+          </b>
+        </h6>
+      </ion-card-title>
+      </ion-card>  
+      
+      <br><br><br>
+
+  <ion-button color="light" (click)="editProfile()" expand="block" fill="outline" shape="round">
+    <ion-icon name="settings-outline"></ion-icon>更改個人資料
+  </ion-button>
+  
+  <br>
+
+<ion-button color="warning" (click)="logoutAlertConfirm()" expand="block" fill="outline" shape="round">
+  <ion-icon name="log-out-outline"></ion-icon>登出
+</ion-button>
+
+</ion-content>

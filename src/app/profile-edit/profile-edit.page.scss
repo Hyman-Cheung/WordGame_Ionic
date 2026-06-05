@@ -1,0 +1,13 @@
+ion-content{
+    --background:var(--ion-color-dark) url('../../assets/gameBackground5.jpg') no-repeat center center/cover;
+    }
+ion-card{
+    box-shadow: -1px 11px 13px -6px rgb(87, 86, 86); //陰影 
+    border-radius: 10px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;}   
+
+    ion-input{
+        font-size: 60%;
+        }

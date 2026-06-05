@@ -1,0 +1,52 @@
+export interface User {
+    userId:string;
+    userName:string;
+    userEmail:string;
+    userPhone:string;
+    userPhoto:string;
+    createdAt:string;
+    editAt:string;
+    userScore:number;
+    q1:boolean;
+    q2:boolean;
+    q3:boolean;
+    q4:boolean;
+    q5:boolean;
+    q6:boolean;
+    q7:boolean;
+    q8:boolean;
+    q9:boolean;
+    q10:boolean;
+    q11:boolean;
+    q12:boolean;
+    q13:boolean;
+    q14:boolean;
+    q15:boolean;
+    q16:boolean;
+    q17:boolean;
+    q18:boolean;
+    q19:boolean;
+    q20:boolean;
+    q1_pass:boolean;
+    q2_pass:boolean;
+    q3_pass:boolean;
+    q4_pass:boolean;
+    q5_pass:boolean;
+    q6_pass:boolean;
+    q7_pass:boolean;
+    q8_pass:boolean;
+    q9_pass:boolean;
+    q10_pass:boolean;
+    q11_pass:boolean;
+    q12_pass:boolean;
+    q13_pass:boolean;
+    q14_pass:boolean;
+    q15_pass:boolean;
+    q16_pass:boolean;
+    q17_pass:boolean;
+    q18_pass:boolean;
+    q19_pass:boolean;
+    q20_pass:boolean;
+
+ 
+}

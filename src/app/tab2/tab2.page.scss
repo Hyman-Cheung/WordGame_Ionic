@@ -1,0 +1,27 @@
+
+ion-content{
+    --background:var(--ion-color-dark) url('../../assets/gameBackground5.jpg') no-repeat center center/cover;
+  }
+
+ion-card
+{ 
+--background:var(--ion-color-dark) url('../../assets/gameBackground4.jpg') no-repeat center center/cover;
+}  
+
+
+
+ion-slides
+{
+    width:35vh;
+    height: 35vh;
+}
+
+ion-list
+{
+margin-top: 30px;
+transform:translateY(10vh);
+font-weight:bold;
+font-size: 3rem;
+background: transparent;
+}
+

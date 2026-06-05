@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="log-out-outline"></ion-icon>
+        返回
+      </ion-button>
+    </ion-buttons>
+    <b class="text" slot="end">你的分數：</b>
+    <ion-badge slot="end" color="light">{{userScore}}</ion-badge>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+ <div class="main_div">
+  <h2 class="o"><b>請輸入正確的答案：</b></h2>
+  <div class="otp">
+    <div class="o"><h2>Bat</h2></div>
+    <div class="o" class="otp"><ng-otp-input  (onInputChange)="valueChange($event)" [config]="config"></ng-otp-input></div><!--OTP-->
+    <div class="o"><h2>om</h2></div>
+  </div>
+
+    <ion-button color="light" (click)="next()"  fill="outline" shape="round">
+      <ion-icon name="pulse-outline"></ion-icon>確定答案
+  </ion-button>
+
+ </div>
+
+    
+
+
+
+</ion-content>

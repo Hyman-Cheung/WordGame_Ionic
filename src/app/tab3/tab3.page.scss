@@ -1,0 +1,31 @@
+ion-content{
+  --background:var(--ion-color-dark) url('../../assets/gameBackground5.jpg') no-repeat center center/cover;
+  }
+
+ion-content{
+    background: azure;
+  }
+
+ion-card{
+    box-shadow: -1px 11px 13px -6px rgb(87, 86, 86); //陰影 
+    border-radius: 10px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    
+    --background:var(--ion-color-dark) url('../../assets/gameBackground4.jpg') no-repeat center center/cover;
+
+    
+
+    ion-thumbnail{
+        width:10vh;
+        height: 10vh;
+        border-radius: 20px;
+     
+    }
+    img{
+        width: 5vh;
+        height: 5vh;
+        transform: translateY(60%);
+    }
+}

@@ -1,0 +1,75 @@
+
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" defaultHref="/"><ion-icon name="chevron-back-outline"></ion-icon></ion-back-button> <!--註冊界面-->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+<ion-card>
+<ion-card-header>
+  <ion-card-title style="text-align: center;"><ion-label color="light"><b>註冊賬號</b></ion-label></ion-card-title>                
+</ion-card-header>
+
+
+
+  <form>
+    <ion-list>
+
+      <ion-item>
+        <ion-label position="stacked">
+          <ion-icon class="ion-margin-end" name="person-outline"></ion-icon>
+          <b>姓名:</b>
+        </ion-label>
+        <ion-input required type="text" [(ngModel)]="name" name="name"></ion-input>   <!--required是錯誤顯示紅色-->
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label  position="stacked">
+          <ion-icon class="ion-margin-end" name="mail-outline"></ion-icon>
+          <b>電郵地址:</b>
+        </ion-label>
+        <ion-input required type="email" [(ngModel)]="email" name="email"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label  position="stacked">
+          <ion-icon class="ion-margin-end" name="call-outline"></ion-icon>
+          <b>電話:</b>
+        </ion-label>
+        <ion-input required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label  position="stacked">
+          <ion-icon class="ion-margin-end" name="lock-closed-outline"></ion-icon>
+          <b>密碼:</b>
+        </ion-label>
+        <ion-input required type="password" [(ngModel)]="password" name="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label  position="stacked">
+          <ion-icon class="ion-margin-end" name="lock-closed-outline"></ion-icon>
+          <b>確認密碼:</b>
+        </ion-label>
+        <ion-input required type="password" [(ngModel)]="confirmPassword" name="confirmPassword" (ionChange)="checkPassword()"></ion-input>
+      <ion-text *ngIf="password && !passwordMatch" color="danger">請輸入相同的密碼</ion-text>
+      <ion-text *ngIf="password && passwordMatch" color="success">正確</ion-text>  <!--確定密碼，如果不對會顯示提示-->
+      </ion-item>
+
+      <br>
+<!--            **              如果密碼不匹配，就按不到Button-->
+      <ion-button color="light" [disabled]="!passwordMatch" required type="submit" (click)="register()" expand="block" shape="round">
+        註冊
+      </ion-button>
+
+    </ion-list>
+  </form>
+
+</ion-card>
+
+</ion-content>
