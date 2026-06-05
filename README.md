@@ -4,7 +4,7 @@ An engaging, mobile-first word puzzle application built with the Ionic Framework
 
 ### 🚀 Try It Now 
 <a href="https://Hyman-Cheung.github.io/WordGame_Ionic">
-  <img src="https://img.shields.io/badge/Try_Android_App-0282fa?style=for-the-badge" alt="Try Android App" height="40">
+  <img src="https://img.shields.io/badge/Try_Android_App-1a8eed?style=for-the-badge" alt="Try Android App" height="40">
 </a>
 
 ---
