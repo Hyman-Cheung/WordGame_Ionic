@@ -66,5 +66,4 @@ Points shift dynamically depending on your accuracy and puzzle status:
 ---
 
 ## 👤 Credits
-
 Designed and Developed by **Hyman Cheung**
