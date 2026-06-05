@@ -1,4 +1,4 @@
-# 🎮Word Game
+# 🎮Word Game ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
 
 An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Supported by secure account sync, players can instantly track scores, manage profile identities, and navigate unlocked puzzle challenges.
 
