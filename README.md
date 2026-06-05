@@ -1,6 +1,6 @@
 # 📱Word Game
 
-An engaging, mobile-first word puzzle application built with the Ionic Framework. **Word Game** features an interactive 3D user experience where players solve exactly **20 distinct word questions**. Supported by secure account synchronization, players can instantly track their scores, manage their profile identities, and navigate unlocked puzzle challenges.
+An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Supported by secure account sync, players can instantly track scores, manage profile identities, and navigate unlocked puzzle challenges.
 
 ### 🚀 Try It Now 
 <a href="https://Hyman-Cheung.github.io/WordGame_Ionic">
