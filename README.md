@@ -1,4 +1,4 @@
-# 📱Word Game
+# 🎮Word Game
 
 An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Supported by secure account sync, players can instantly track scores, manage profile identities, and navigate unlocked puzzle challenges.
 
@@ -9,7 +9,7 @@ An engaging word puzzle app built with Ionic Framework for Android and iOS. Word
 
 ---
 
-## 🎮 Core Game Systems & Modes
+## 📱Core Game Systems & Modes
 
 ### 🌟 Registration
 * **Account Creation:** New players register by providing a custom player username, a valid email address, and a secure password.
