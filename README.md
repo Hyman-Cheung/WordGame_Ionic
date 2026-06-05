@@ -1,4 +1,4 @@
-# 🎮Word Game ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
+# 🎮 Word Game ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
 
 An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Supported by secure account sync, players can instantly track scores, manage profile identities, and navigate unlocked puzzle challenges.
 
@@ -9,7 +9,7 @@ An engaging word puzzle app built with Ionic Framework for Android and iOS. Word
 
 ---
 
-## 📱Core Game Systems & Modes
+## 📱 Core Game Systems & Modes
 
 ### 🌟 Registration
 * **Account Creation:** New players register by providing a custom player username, a valid email address, and a secure password.
@@ -26,11 +26,11 @@ The game experience is organized into three easily accessible dashboards located
 * **Main Game Hub:** Features a sleek 3D interactive interface that lets you immediately dive into your active gameplay progression.
 * **Stage Select Grid:** Provides a visual layout of all 20 game stages, allowing you to quickly spot your progress.
 
-### 🖼️ Interactive 3D Main Menu
+### 🏠 Main Page
 * **Word Carousel:** The main game lobby showcases an animated, 3D cube-effect carousel spelling out **W-O-R-D**. Players can swipe through these gorgeous visual block cards.
 * **Smart Progress Detection:** Tapping the main "Start Game" button triggers an automatic progression check, which instantly scans your history and launches the exact question level you are currently up to.
 
-### 🗂️ Stage Select & Clearance Tracking
+### 🗺️ Stage Select & Clearance Tracking
 * **Visual Level Cards:** The stage select board uses custom graphics cards labeled for every question milestone from Level 1 to 20 mapped dynamically out of your user data.
 * **Checkmark Progression:** Once you successfully beat a question, a unique completion checkmark icon lights up on that level's card inside the selection grid. 
 * **Unlocked Replays:** Tapping on any verified, completed question block allows you to instantly return to that level to review the puzzle map or play for replay points.
@@ -59,9 +59,9 @@ Points shift dynamically depending on your accuracy and puzzle status:
 
 ## 📸 Screenshots & Previews
 
-| Login Page | Registration Page | Profile Page | 3D Swiper Dashboard | Stage Select Page | Game Page | 
+|  🔑 Login Page  |📝 Registration <br/> Page|  👤 Profile Page  |  🏠 Main Page  |🗺️ Stage Select <br/> Page|  🎮 Game Page  | 
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| <img src="assets/LoginPage.png" width="180" height="300"> | <img src="assets/RegistrationPage.png" width="160" height="300"> | <img src="assets/ProfilePage.png" width="180" height="300"> | <img src="assets/3DSwiperDashboard.png" width="180" height="300"> | <img src="assets/StageSelectPage.png" width="180" height="300"> | <img src="assets/GamePage.png" width="180" height="300"> |
+| <img src="assets/LoginPage.png" width="180" height="300"> | <img src="assets/RegistrationPage.png" width="180" height="300"> | <img src="assets/ProfilePage.png" width="180" height="300"> | <img src="assets/3DSwiperDashboard.png" width="180" height="300"> | <img src="assets/StageSelectPage.png" width="180" height="300"> | <img src="assets/GamePage.png" width="180" height="300"> |
 
 ---
 
