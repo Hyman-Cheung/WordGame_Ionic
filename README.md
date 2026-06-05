@@ -61,9 +61,9 @@ Points shift dynamically depending on your accuracy and puzzle status:
 
 *(Tip: Upload your game snapshots directly into an `assets/` directory inside your repository to show off your UI here!)*
 
-| Login Page | Profile Page | 3D Swiper Dashboard | Stage Select Page | Game page | 
-|:---:|:---:|:---:|:---:|:---:|
-| <img src="assets/dashboard.png" width="180"> | <img src="assets/grid.png" width="180"> | <img src="assets/gameplay.png" width="180"> | <img src="assets/profile.png" width="180"> | <img src="assets/profile.png" width="180"> |
+| Login Page | Registration Page | Profile Page | 3D Swiper Dashboard | Stage Select Page | Game Page | 
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| <img src="assets/LoginPage.png" width="180"> | <img src="assets/RegistrationPage.png" width="180"> | <img src="assets/ProfilePage.png" width="180"> | <img src="assets/3DSwiperDashboard.png" width="180"> | <img src="assets/StageSelectPage.png" width="180"> | <img src="assets/GamePage.png" width="180"> |
 
 ---
 
