@@ -11,7 +11,7 @@ An engaging word puzzle app built with Ionic Framework for Android and iOS. Word
 
 ## 📱 Core Game Systems & Modes
 
-### 🌟 Sign-up
+### 🌟 Sign-up & Login
 * **Account Creation:** New players register by providing a custom player username, a valid email address, and a secure password.
 
 * **Email Verification:** Upon submitting the registration form, the authentication system automatically dispatches a verification email directly to the user's inbox to confirm identity and secure the profile records.
