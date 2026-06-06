@@ -12,33 +12,25 @@ An engaging word puzzle app built with Ionic Framework for Android and iOS. Word
 ## 📱 Core Game Systems & Modes
 
 ### 🌟 Sign-up & Login
-* **Account Creation:** New players register by providing a custom player username, a valid email address, and a secure password.
-
-* **Email Verification:** Upon submitting the registration form, the authentication system automatically dispatches a verification email directly to the user's inbox to confirm identity and secure the profile records.
-
-* **Account Confirmation:** The user must open the verification email and click the confirmation link to validate their email address and unlock account privileges.
-
-* **Secure Login:** Once the account is successfully verified and confirmed, the user can log in with their credentials to access the game dashboards and begin syncing their real-time score data.
+* **Account Creation:** Register by providing a username, valid email, and secure password.
+* **Email Verification:** The system automatically dispatches a verification link to the user's inbox to confirm identity and secure the profile.
+* **Account Confirmation:** Users click the email link to validate their address and unlock full account privileges.
+* **Secure Login:** Verified users log in with their credentials to access the game dashboards and begin syncing real-time score data.
 
 ### 🔄 The Three-Section Game Hub
-The game experience is organized into three easily accessible dashboards located on the bottom navigation bar:
-* **Profile Settings:** Displays your personalized gaming tag using dynamically bound data, registered email, verification date tracking, and current running score total.
-* **Main Game Hub:** Features a sleek 3D interactive interface that lets you immediately dive into your active gameplay progression.
-* **Stage Select Grid:** Provides a visual layout of all 20 game stages, allowing you to quickly spot your progress.
+The game experience is streamlined into three intuitive dashboards on the bottom navigation bar:
 
-### 👤 Profile Page
-* **Identity Tracking:** Pulls real-time authenticated user states to update and accurately showcase your unique system username inside the client framework.
-* **Interactive Profile Management:** Allows players to directly edit and update their account credentials and personal profile information as needed.
-* **Score Synchronizer:** Houses a secure telemetry connection to display your absolute total point count directly on your dashboard menu view.
+### 1. 👤 Profile Settings
+* **Identity & Account Control:** Displays dynamically bound data (username, registered email, and verification date) while letting players directly edit credentials in real time.
+* **Telemetry Score Synchronizer:** Securely tracks and displays your absolute total point count directly on the dashboard.
 
-### 🏠 Main Page
-* **Word Carousel:** The main game lobby showcases an animated, 3D cube-effect carousel spelling out **W-O-R-D**. Players can swipe through these gorgeous visual block cards.
-* **Smart Progress Detection:** Tapping the main "Start Game" button triggers an automatic progression check, which instantly scans your history and launches the exact question level you are currently up to.
+### 2. 🏠 Main Game Hub
+* **Interactive Word Carousel:** Features a 3D cube-effect lobby spelling out W-O-R-D where players can swipe through animated visual cards.
+* **Smart Progress Detection:** The "Start Game" button instantly scans your player history to launch your exact current question level.
 
-### 🗺️ Stage Selection
-* **Visual Level Cards:** The stage select board uses custom graphics cards labeled for every question milestone from Level 1 to 20 mapped dynamically out of your user data.
-* **Checkmark Progression:** Once you successfully beat a question, a unique completion checkmark icon lights up on that level's card inside the selection grid. 
-* **Unlocked Replays:** Tapping on any verified, completed question block allows you to instantly return to that level to review the puzzle map or play for replay points.
+### 3. 🗺️ Stage Select Grid
+* **Dynamic 20-Stage Layout:** Displays custom graphics cards for Levels 1 to 20, mapped directly from user data to show progress at a glance.
+* **Visual Milestones & Replays:** Successful levels light up with a completion checkmark, allowing players to tap completed blocks to replay for extra points or review puzzle maps.
 
 ---
 
@@ -46,7 +38,6 @@ The game experience is organized into three easily accessible dashboards located
 
 Points shift dynamically depending on your accuracy and puzzle status:
 * **Base Clearance:** Earn a standardized point reward upon completing a fresh level (e.g., **+3 points** for early stages, scaling up to **+8 points** or **+12 points** for complex, late-game answers).
-* **The "Never Give Up" Payout:** If you fail **5 or more times** but stick with it until you discover the answer, the game acknowledges your persistence with your base score.
 * **Replay Veteran Reward:** Clearing a stage you have already successfully unlocked previously earns you a smaller baseline bonus of **+1 to +3 points**.
 * **Grand Finale Bonus:** Solving and clearing the path for all 20 puzzles awards a massive end-game payout (ranging from **+20 to +30 points**).
 * **Streak Deductions:** Watch your inputs! Making too many errors triggers a strike penalty. Continuous blunders subtract points directly from your master balance (e.g., dropping **-1 to -6 points** upon hitting a **3-mistake streak**).
@@ -67,7 +58,7 @@ Points shift dynamically depending on your accuracy and puzzle status:
 
 <div align="center">
 
-| 📝 Sign-up | 🔑 Login Page | 👤 Profile Page | 
+| 📝 Sign-up Page | 🔑 Login Page | 👤 Profile Settings | 
 | :---: | :---: | :---: |
 | <img src="assets/RegistrationPage.png" width="220" height="450"> | <img src="assets/LoginPage.png" width="220" height="450"> | <img src="assets/ProfilePage.png" width="220" height="450"> |
 
@@ -77,9 +68,9 @@ Points shift dynamically depending on your accuracy and puzzle status:
 
 <div align="center">
 
-| 🏠 Main Page | 🗺️ Stage Selection | 🎮 Game Page | 
+| 🏠 Main Game Hub | 🗺️ Stage Select Grid | 🎮 Game Page | 
 | :---: | :---: | :---: |
-| <img src="assets/3DSwiperDashboard.png" width="220" height="450"> | <img src="assets/StageSelectPage.png" width="220" height="450"> | <img src="assets/GamePage.png" width="220" height="450"> |
+| <img src="assets/MainGameHub.png" width="220" height="450"> | <img src="assets/StageSelectPage.png" width="220" height="450"> | <img src="assets/GamePage.png" width="220" height="450"> |
 
 </div>
  
