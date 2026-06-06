@@ -64,9 +64,13 @@ Points shift dynamically depending on your accuracy and puzzle status:
 
 ## 📸 Screenshots & Previews
 
-| 📝 Sign-up | 🔑 Login Page | 👤 Profile Page | 🏠 Main Page | 🗺️ Stage Selection | 🎮 Game Page | 
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| <img src="assets/RegistrationPage.png" width="180" height="300"> | <img src="assets/LoginPage.png" width="180" height="300"> | <img src="assets/ProfilePage.png" width="180" height="300"> | <img src="assets/3DSwiperDashboard.png" width="180" height="300"> | <img src="assets/StageSelectPage.png" width="180" height="300"> | <img src="assets/GamePage.png" width="180" height="300"> |
+| 📝 Sign-up | 🔑 Login Page | 👤 Profile Page | 
+|:---:|:---:|:---:|
+| <img src="assets/RegistrationPage.png" width="220" height="400"> | <img src="assets/LoginPage.png" width="220" height="400"> | <img src="assets/ProfilePage.png" width="220" height="400"> | 
+
+|🏠 Main Page | 🗺️ Stage Selection | 🎮 Game Page | 
+|:---:|:---:|:---:|
+| <img src="assets/3DSwiperDashboard.png" width="220" height="400"> | <img src="assets/StageSelectPage.png" width="220" height="400"> | <img src="assets/GamePage.png" width="220" height="400"> |
  
 ---
 
