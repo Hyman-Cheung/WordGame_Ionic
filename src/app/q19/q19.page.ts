@@ -70,29 +70,33 @@ export class Q19Page implements OnInit {
 
   ngOnInit() {
     this.auth.user$.subscribe(user=>{  //用戶的資料
-      this.userName = user.userName;
-      this.userId =user.userId;
-      this.userScore=user.userScore;
-      this.q1=user.q1;
-      this.q2=user.q2;
-      this.q3=user.q3;
-      this.q4=user.q4;
-      this.q5=user.q5;
-      this.q6=user.q6;
-      this.q7=user.q7;
-      this.q8=user.q8;
-      this.q9=user.q9;
-      this.q10=user.q10;
-      this.q11=user.q11;
-      this.q12=user.q12;
-      this.q13=user.q13;
-      this.q14=user.q14;
-      this.q15=user.q15;
-      this.q16=user.q16;
-      this.q17=user.q17;
-      this.q18=user.q18;
-      this.q19=user.q19;
-      this.q20=user.q20;
+      if (user) {
+        this.userName = user.userName;
+        this.userId = user.userId;
+        this.userScore = user.userScore;
+        this.q1 = user.q1;
+        this.q2 = user.q2;
+        this.q3 = user.q3;
+        this.q4 = user.q4;
+        this.q5 = user.q5;
+        this.q6 = user.q6;
+        this.q7 = user.q7;
+        this.q8 = user.q8;
+        this.q9 = user.q9;
+        this.q10 = user.q10;
+        this.q11 = user.q11;
+        this.q12 = user.q12;
+        this.q13 = user.q13;
+        this.q14 = user.q14;
+        this.q15 = user.q15;
+        this.q16 = user.q16;
+        this.q17 = user.q17;
+        this.q18 = user.q18;
+        this.q19 = user.q19;
+        this.q20 = user.q20;
+      } else {
+        console.warn("User data is not available or user is logged out.");
+      }
     })
 
   }

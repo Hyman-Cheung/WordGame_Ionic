@@ -28,10 +28,14 @@ export class ProfileEditPage implements OnInit {
 
   ngOnInit() {
     this.auth.user$.subscribe(user=>{
-      this.userId =user.userId;
-      this.name = user.userName;
-      this.email = user.userEmail;
-      this.phone = user.userPhone;
+      if (user) {
+        this.userId = user.userId;
+        this.name = user.userName;
+        this.email = user.userEmail;
+        this.phone = user.userPhone;
+      } else {
+        console.warn('Profile Edit Page: No authenticated user data found.');
+      }
 
     })
   }
