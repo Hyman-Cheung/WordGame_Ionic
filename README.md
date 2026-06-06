@@ -21,7 +21,7 @@ An engaging word puzzle app built with Ionic Framework for Android and iOS. Word
 The game experience is streamlined into three intuitive dashboards on the bottom navigation bar:
 
 ### 1. 👤 Profile Settings
-* **Identity & Account Control:** Displays dynamically bound data (username, registered email, and verification date) while letting players directly edit credentials in real time.
+* **Identity & Account Control:** Displays dynamically bound data (username, registered email, verification date, and last edit date) while letting players directly edit credentials in real time.
 * **Telemetry Score Synchronizer:** Securely tracks and displays your absolute total point count directly on the dashboard.
 * **Session Logout:** Provides a secure logout function to safely terminate the active session.
 
