@@ -23,6 +23,7 @@ The game experience is streamlined into three intuitive dashboards on the bottom
 ### 1. 👤 Profile Settings
 * **Identity & Account Control:** Displays dynamically bound data (username, registered email, and verification date) while letting players directly edit credentials in real time.
 * **Telemetry Score Synchronizer:** Securely tracks and displays your absolute total point count directly on the dashboard.
+* **Session Logout:** Provides a secure logout function to safely terminate the active session.
 
 ### 2. 🏠 Main Game Hub
 * **Interactive Word Carousel:** Features a 3D cube-effect lobby spelling out W-O-R-D where players can swipe through animated visual cards.
