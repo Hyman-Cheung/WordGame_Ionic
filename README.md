@@ -1,6 +1,6 @@
-# 🎮 Word Game ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
+# 🎮 Word Game </br> [![Ionic](https://img.shields.io/badge/Ionic-%233880FF.svg?style=flat&logo=ionic&logoColor=white)](https://ionicframework.com/) [![Firebase](https://img.shields.io/badge/Firebase-%23FFCA28.svg?style=flat&logo=firebase&logoColor=black)](https://firebase.google.com/) [![iOS](https://img.shields.io/badge/-000000?style=flat&logo=ios&logoColor=white)](https://developer.apple.com/ios/) [![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white)](https://www.android.com/)
 
-An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Supported by secure account sync, players can instantly track scores, manage profile identities, and navigate unlocked puzzle challenges.
+An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Powered by Firebase Cloud Datastores, all player profile data, real-time progression milestones, and high scores are securely synced and backed up across devices instantly.
 
 ### 🚀 Try It Now 
 <a href="https://Hyman-Cheung.github.io/WordGame_Ionic">
