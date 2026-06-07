@@ -2,9 +2,9 @@
 
 An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Powered by Firebase Cloud Datastores, all player profile data, real-time progression milestones, and high scores are securely synced and backed up across devices instantly.
 
-### 🚀 Try It Now 
+## 🚀 Try It Now
 <a href="https://Hyman-Cheung.github.io/WordGame_Ionic">
-  <img src="https://img.shields.io/badge/Try_Android_App-1a8eed?style=for-the-badge" alt="Try Android App" height="40">
+    <img src="https://img.shields.io/badge/Try_Android_App-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Try Android App">
 </a>
 
 ---
