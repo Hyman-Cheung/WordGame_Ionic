@@ -61,7 +61,7 @@ Points shift dynamically depending on your accuracy and puzzle status:
 
 | 📝 Sign-up Page | 🔑 Login Page | 👤 Profile Settings | 
 | :---: | :---: | :---: |
-| <img src="assets/RegistrationPage.png" width="220" height="450"> | <img src="assets/LoginPage.png" width="220" height="450"> | <img src="assets/ProfilePage.png" width="220" height="450"> |
+| <img src="screenshots/WordGame_RegistrationPage.png" width="220" height="450"> | <img src="screenshots/WordGame_LoginPage.png" width="220" height="450"> | <img src="screenshots/WordGame_ProfilePage.png" width="220" height="450"> |
 
 </div>
 
@@ -71,7 +71,7 @@ Points shift dynamically depending on your accuracy and puzzle status:
 
 | 🏠 Main Game Hub | 🗺️ Stage Select Grid | 🎮 Game Page | 
 | :---: | :---: | :---: |
-| <img src="assets/MainGameHub.png" width="220" height="450"> | <img src="assets/StageSelectPage.png" width="220" height="450"> | <img src="assets/GamePage.png" width="220" height="450"> |
+| <img src="screenshots/WordGame_MainGameHub.png" width="220" height="450"> | <img src="screenshots/WordGame_StageSelectPage.png" width="220" height="450"> | <img src="screenshots/WordGame_GamePage.png" width="220" height="450"> |
 
 </div>
  
