@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Ionic Mobile Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        /* The Phone Chassis (Portrait Layout) */
+        .phone-frame {
+            position: relative;
+            width: 375px;        /* Standard mobile viewport width */
+            height: 760px;       /* Standard mobile viewport height */
+            background: #1a1a1a; /* Sleek black phone bezel */
+            border-radius: 40px;
+            padding: 16px;       /* Bezel thickness */
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.4);
+        }
+
+        /* Camera Lens cut-out at the top */
+        .phone-camera {
+            position: absolute;
+            top: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 15px;
+            background: #000;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+        /* The screen displaying your compiled Ionic web code */
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border: none;
+            border-radius: 28px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone-frame">
+        <div class="phone-camera"></div>
+        <iframe class="phone-screen" src="index.html"></iframe>
+    </div>
+
+</body>
+</html>
