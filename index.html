@@ -1,72 +1,47 @@
-<!-- 
-	Author: Cheung Hing Lam - Hyman
--->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Word Game</title>
-		<style>
-			/* Background */
-			body 
-			{
-				font-family: Arial, sans-serif;
-				text-align: center;
-				background-color: #555555;
-				padding: 40px 20px;
-			}
-			
-			/* Content Container */
-			.content-container 
-			{
-				max-width: 600px;
-				margin: 0 auto;
-				background: white;
-				padding: 30px;
-				border-radius: 12px;
-				box-shadow: 5px 5px 30px rgba(3,3,3,30);
-			}
-			
-			/* The link that let user to demo */
-			.demo-card 
-			{
-				display: block;
-				text-decoration: none;
-				color: #333;
-				margin: 30px auto 10px auto;
-				padding: 50px 20px;
-				border: 2px dashed #333333;
-				border-radius: 24px;
-				background-color: #eeeeee;
-				max-width: 320px;
-				transition: all 0.3s ease;
-				cursor: pointer;
-			}
-
-			/* Hover animation of the link */
-			.demo-card:hover 
-			{
-				transform: translateY(-5px);
-				border-color: #ffc505;
-				background-color: #fff4d6;
-				box-shadow: 0 10px 25px rgba(245, 179, 27, 0.15);
-			}
-			
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Word Game</title>
+        <style>
+            /* Background */
+            body 
+            {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #555555;
+                padding: 40px 20px;
+                margin: 0;
+            }
+            
+            /* Content Container */
+            .content-container 
+            {
+                max-width: 600px;
+                margin: 0 auto;
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+            }
+            
 			/* Icon */
 			.icon-div 
 			{
-				font-size: 60px;
-				margin-bottom: 15px;
 				animation: float 3s ease-in-out infinite;
+				font-weight: bold;
+				font-family: Arial, sans-serif;
+				font-size: 24px;
 			}
+
 			#icon
 			{
-				hight:130px;
-				width:130px;
-				border:13px;
+				margin-bottom: -20px;
+				height:80px;
+				width:80px; 
 			}
-			
+
 			/* Animation of the icon */
 			@keyframes float 
 			{
@@ -74,75 +49,80 @@
 				50% { transform: translateY(-10px); }
 				100% { transform: translateY(0px); }
 			}
-			
-			/* Instruction */
-			#instruction
+
+			/* Animation of the icon */
+			@keyframes float 
 			{
-				font-size: 13px; 
-				color: #718096;
-				margin: 8px 0 0 0; 
-				line-height: 1.4;
+				0% { transform: translateY(0px); }
+				50% { transform: translateY(-10px); }
+				100% { transform: translateY(0px); }
 			}
+
+            /* Wrapper Container */
+            .wrapper 
+            {
+                display: block;
+                margin: 30px auto 10px auto;
+                padding: 20px;
+                border: 2px dashed #333333;
+                border-radius: 24px;
+                background-color: #eeeeee;
+                max-width: 420px; /* Slightly wider to easily fit the phone layout */
+            }
+
+            
+            /* Device Frame */
+            .demo-iframe {
+                width: 100%;
+                height: 810px; 
+                border: none;
+                border-radius: 20px;
+                display: block;
+            }
+                
+            /* Button */
+            .btn
+            {
+                display: inline-block;
+                margin-top: 20px;
+                background-color: #666666;
+                color: white;
+                padding: 12px 30px;
+                border-radius: 8px;
+                font-weight: bold;
+                font-size: 15px;
+                text-decoration: none;
+                transition: background 0.2s ease;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }               
+            
+            /* Hover animation of the download button */
+            #btn-download:hover 
+            {
+                background-color: #ffc505;
+                color: #333;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="content-container">
+			<!-- Icon -->
+			<div class="icon-div">
+				<img id= "icon" src="./src/assets/icon/favicon.png"/>
+				<p id="title">Word Game</p>
+			</div>
 			
-			/* Bttton */
-			.btn
-			{
-				display: inline-block;
-				margin-top: 20px;
-				background-color: #666666;
-				color: white;
-				padding: 12px 30px;
-				border-radius: 8px;
-				font-weight: bold;
-				font-size: 15px;
-				transition: background 0.2s ease;
-				box-shadow: 0 4px 6px rgba(49, 130, 206, 0.2);
-			}
-			
-			/* Hover animation of the launch button */
-			.demo-card:hover #btn-launch
-			{
-				background-color: #ffc505;
-			}
-			
-			
-			/* Hover animation of the download button */
-			#btn-download:hover 
-			{
-				background-color: #ffc505;
-			}
-			
-		</style>
-	</head>
-	<!-- Body of the web page -->
-	<body>
-		<div class="content-container">
-			<!-- Title of the app -->
-			<h1>Word Game</h1>
-			<!-- Direction of the app -->
-			<p>
-        An engaging word puzzle app built with Ionic Framework for Android and iOS. Word Game features a 3D user experience where players solve exactly 20 word questions. Powered by Firebase Cloud Datastores, all player profile data, real-time progression milestones, and high scores are securely synced and backed up across devices instantly.
-			</p>
-			<!-- Link -->
-			<a href="https://appetize.io/app/b_d2ckrhhrjxtr7yda2lqymdeuri" target="_blank" class="demo-card">
-				<!-- Icon -->
-				<div class="icon-div">
-					<img id= "icon" src="./src/assets/icon/favicon.png"/>
-				</div>
-				<!-- Instruction -->
-				<h3>Launch Android App Demo</h3>
-				<p id="instruction">
-					Click to open a secure virtual device simulator in a new tab. No downloads or setup required.
-				</p>
-				<!-- Launch Button -->
-				<div class="btn" id="btn-launch">Open Live Simulation</div>
-			</a>
-			<!-- Download Button -->
-			<a href="./WordGame.apk" download>
-				<div class="btn" id="btn-download">
-					Download Android APP
-				</div>
-			</a>
-		</div>
-	</body>
+			<!-- Device Frame -->
+            <div class="wrapper">
+                <iframe class="demo-iframe" src="./www/demo.html" title="Word Game Demo"></iframe>
+            </div>
+            
+            <a href="./WordGame.apk" download style="text-decoration: none;">
+                <div class="btn" id="btn-download">
+                    Download Android APP
+                </div>
+            </a>
+        </div>
+    </body>
 </html>
