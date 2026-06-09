@@ -4,7 +4,7 @@ An engaging word puzzle app built with Ionic Framework for Android and iOS. Word
 
 ## 🚀 Try It Now
 <a href="https://Hyman-Cheung.github.io/WordGame_Ionic">
-    <img src="https://img.shields.io/badge/Try_Android_App-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Try Android App">
+    <img src="https://img.shields.io/badge/Try_Ionic_App-3880FF?style=for-the-badge&logo=ionic&logoColor=white" alt="Try Ionic App">
 </a>
 
 ---
