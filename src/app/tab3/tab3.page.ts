@@ -115,7 +115,7 @@ export class Tab3Page implements OnInit {
   //////////////////音效///////////////////
   startGamePlayAudio() {                  // 開始遊戲
     this.audio = new Audio();
-    this.audio.src = "/assets/mp3/start3.mp3";
+    this.audio.src = "assets/mp3/start3.mp3";
     this.audio.play();
   }
 }

@@ -74,7 +74,7 @@ async logoutAlertConfirm() {
          //////////////////音效///////////////////
   logoutPlayAudio(){                  //logout
     this.audio=new Audio
-    this.audio.src = "/assets/mp3/logout.mp3";
+    this.audio.src = "assets/mp3/logout.mp3";
     this.audio.play();
   }
    

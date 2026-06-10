@@ -456,46 +456,46 @@ async undateUserScoreCorrect(){   //更新用戶Firebase的分數（答對）
 
 correctAllPlayAudio(){                      //答對所有題目
   this.audio=new Audio
-  this.audio.src = "/assets/mp3/correctEnd.mp3";
+  this.audio.src = "assets/mp3/correctEnd.mp3";
   this.audio.play();
 }
 
 correctPlayAudio(){                      //答對（不會不斷重複）
   this.audio=new Audio
-  this.audio.src = "/assets/mp3/correct.mp3";
+  this.audio.src = "assets/mp3/correct.mp3";
   this.audio.play();
 }
 
 
 inputPlayAudio(){                      //輸入答案
   this.audio=new Audio
-  this.audio.src = "/assets/mp3/input.mp3";
+  this.audio.src = "assets/mp3/input.mp3";
   this.audio.play();
 }
 
 wrong5CorrectPlayAudio(){                      //答錯了5次才答對
   this.audio=new Audio
-  this.audio.src = "/assets/mp3/wrong5Correct.mp3";
+  this.audio.src = "assets/mp3/wrong5Correct.mp3";
   this.audio.play();
 }
 
 outPlayAudio(){                      //返回
   this.audio=new Audio
-  this.audio.src = "/assets/mp3/out.mp3";
+  this.audio.src = "assets/mp3/out.mp3";
   this.audio.play();
 }
 
 
 wrongPlayAudio(){                      //回答錯誤
   this.audio=new Audio
-  this.audio.src = "/assets/mp3/wrong.mp3";
+  this.audio.src = "assets/mp3/wrong.mp3";
   this.audio.play();
 }
 
 
 wrong3PlayAudio(){                      //回答錯誤
   this.audio=new Audio
-  this.audio.src = "/assets/mp3/wrong3.mp3";
+  this.audio.src = "assets/mp3/wrong3.mp3";
   this.audio.play();
 }
 
