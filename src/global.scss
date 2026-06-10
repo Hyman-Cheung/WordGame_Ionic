@@ -27,10 +27,19 @@
 
 
 
-.correctAlertConfirm .alert-wrapper{
-    button{
+.correctAlertConfirm .alert-wrapper
+{
+    --background: #ffffff;
+
+    button
+    {
         color: black;
-        
+    } 
+    .alert-title {
+        color: #111111;
     }
-   
+    .alert-sub-title {
+        color: #454545;
+    }
 }
+
