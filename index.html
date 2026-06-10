@@ -2,55 +2,63 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Word Game</title>
         <style>
-            /* Background */
+            /***** Background & Reset *****/
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
             body 
             {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                background-image: url(./src/assets/gameBackground2.jpg);
-                padding: 40px 10px; 
-                margin: 0;
+                background-image: url(./src/assets/gameBackground2.jpg);  
+                background-position: center;
+                text-align: center; 
+                display: flex;
+                align-items: center;
+                min-height: 100vh;
+                padding: 20px;
+                font-family: sans-serif;
             }
             
-            /* Content Container */
+            /***** Content Container *****/
             .content-container 
             {
+                background-color: #FFFFFF;
                 width: 100%;
-                max-width: 800px; 
-                max-height: 1300px;
-                height: 800vh;
+                max-width: 600px; /* Limits width on big screens */
                 margin: 0 auto;
-                background: white;
-                padding: 30px 15px;
-                border: 13px solid #333333;
+                padding: 30px 20px;
                 border-radius: 30px;
-                box-shadow: 0px 100px 300px rgba(0,0,0,0.3);
-                box-sizing: border-box; 
+                border: 13px solid #333333;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             }
             
-            /* Icon */
+            /***** Icon *****/
             .icon-div 
             {
+                margin-bottom: 25px;
                 animation: float 3s ease-in-out infinite;
             }
-            #icon
+            .icon
             {
-                margin-bottom: -15px;
-                height: 100px; 
-                width: 100px;
+                height: 120px; 
+                width: 120px;
             }
-            #title
+            .title
             {
-                font-weight: bold;
-                font-size: 40px; 
-                margin: 20px 0 0 0;
-            }
-            /* Animation of the icon */
+                margin: 10px 0 0 0;
+                font-weight: bold;  
+                font-size: 30px;
+            } 
+			
+            /***** Animation of the icon *****/
             @keyframes float 
             {
                 0% { transform: translateY(0px); }
@@ -58,129 +66,122 @@
                 100% { transform: translateY(0px); }
             }
 
-            /* Wrapper Container */
-            .wrapper 
-            {
-                width: 100%;
-                display: block;    
-                padding: 60px 15px;  
-                margin: 0px;
-                border-radius: 20px;
-                flex-grow: 1; 
-                box-sizing: border-box;
-                overflow: hidden; 
-                position: relative;
-            }
+        /***** The Phone Chassis (Responsive Layout) *****/
+        .phone-frame 
+		{
+            position: relative;
+            width: 100%;
+            max-width: 360px;    /* Looks like a realistic phone on PC */
+            height: 640px;       /* Good aspect ratio */
+            background: #1a1a1a; /* Sleek black phone bezel */
+            border-radius: 40px;
+            padding: 12px;       /* Bezel thickness */
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.4);
+        }
 
-            /* Device Frame */
-            .demo-iframe {
-                width: 100%;
-                height: 820px; 
-                padding: 30px 0px;
-                border: none;
-                border-radius: 20px;
-                display: block;
-            }
-                
-            /* Button */
+        /***** Camera Lens cut-out at the top *****/
+        .phone-camera 
+		{
+            position: absolute;
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 12px;
+            background: #000;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+        /***** The screen displaying your compiled Ionic web code *****/
+        .phone-screen 
+		{
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border: none;
+            border-radius: 28px;
+            overflow: hidden;
+        }
+			
+            /***** Button *****/
             .btn
             {
                 display: inline-block;
-                margin: 50px 0px;
                 background-color: #666666;
                 color: white;
-                padding: 20px 45px;
-                border-radius: 8px;
+                margin-top: 25px;
+                padding: 15px 35px;
+                border-radius: 30px;
                 font-weight: bold;
-                font-size: 15px;
+                font-size: 20px;
                 text-decoration: none;
                 transition: background 0.2s ease;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }                
-            
-            /* Hover animation of the download button */
+            /***** Hover animation of the download button *****/
             #btn-download:hover 
             {
                 background-color: #3DDC84;
                 color: #333;
             }
-            
-            /* --- IPHONE SPECIFIC FORCED ZOOM EXTENSION --- */
-            @media screen and (max-width: 430px) 
-            {
-                .content-container {
-                    max-width: 350px; 
-                    height: 90vh; 
-                    max-height: 760px;
-                    padding: 12px;
-                    border-width: 8px; 
+			
+			/***** Mobile Styles *****/
+			@media screen and (max-width: 420px)
+			{
+                body {
+                    padding: 10px;
                 }
-
-                .icon-div {
-                    flex-shrink: 0; 
-                }
-
-                #title {
-                    margin: 5px 0 0 0; 
-                    font-size: 18px;
-                }
-
-                #icon {
-                    height: 40px; 
-                    width: 40px;
-                }
-
-                .wrapper {
-                    padding: 0px; 
-                    margin: 5px auto;
-                    width: 100%;
-                    height: 52vh; 
-                    overflow: hidden !important;
-                    position: relative;
-                    background-color: #f7f7f7;
-                }
-                
-                .demo-iframe 
+                .content-container 
                 {
-                    width: 130%;  
-                    height: 130%; 
-                    transform: scale(0.76); 
-                    transform-origin: top left; 
-                    
-                    padding: 0px; 
-                    border: none;
-                    border-radius: 12px;
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                    border: 6px solid #333333; /* Thinner border so it doesn't crowd the screen */
+                    padding: 15px 10px;
+                    border-radius: 20px;
                 }
-
-                .btn {
-                    margin: 5px 0px; 
-                    padding: 10px 20px;
-                    font-size: 13px;
+                .phone-frame 
+				{
+                    height: 480px; /* Scales down the height so everything fits on a small mobile screen */
+                    border-radius: 30px;
                 }
-
-                a {
-                    flex-shrink: 0; 
-                    width: 100%;
+                .phone-screen 
+				{
+                    border-radius: 18px;
                 }
-            }
+				.icon-div 
+				{
+					margin-bottom: 10px;
+				}
+                .icon 
+				{
+                    height: 60px;
+                    width: 60px;
+                }
+                .title 
+				{
+                    font-size: 20px;
+                }
+                .btn 
+				{
+                    font-size: 18px;
+                    padding: 12px 25px;
+                    margin-top: 15px;
+                }
+			}
         </style>
     </head>
     <body>
-        <div class="content-container">
-            <div class="icon-div">
-                <img id="icon" src="./src/assets/icon/favicon.png"/>
-                <p id="title">Word Game</p>
+		<div class="content-container">
+			<div class="icon-div">
+                <img class="icon" src="./src/assets/icon/favicon.png"/>
+                <p class="title">Word Game</p>
             </div>
             
-            <div class="wrapper">
-                <iframe class="demo-iframe" src="./www/demo.html" title="Word Game Demo"></iframe>
-            </div>
+			<div class="phone-frame">
+				<div class="phone-camera"></div>
+				<iframe class="phone-screen" src="./www/index.html"></iframe>
+			</div>
             
-            <a href="./WordGame.apk" download style="text-decoration: none;">
+			<a href="./WordGame.apk" download style="text-decoration: none;">
                 <div class="btn" id="btn-download">
                     Download Android APP
                 </div>
